@@ -215,9 +215,9 @@ def register_all_cityscapes(root):
 def register_all_pascal_voc(root):
     SPLITS = [
         ("m3fd_trainval", "M3FD", "trainval"),
-        ("m3fd_2007_train", "M3FD", "train"),
-        ("m3fd_2007_val", "M3FD", "val"),
-        ("m3fd_2007_test", "M3FD", "test"),
+        ("m3fd_train", "M3FD", "train"),
+        ("m3fd_val", "M3FD", "val"),
+        ("m3fd_test", "M3FD", "test"),
         # ("voc_2012_trainval", "VOC2012", "trainval"),
         # ("voc_2012_train", "VOC2012", "train"),
         # ("voc_2012_val", "VOC2012", "val"),
