@@ -1,7 +1,6 @@
 import math
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
-# from prettytable import PrettyTable
 import tqdm
 import cv2
 import scipy
@@ -17,10 +16,6 @@ from diffusiondet.util.model_ema import add_model_ema_configs
 import matplotlib.pyplot as plt
 from PIL import Image
 from scipy.io import loadmat, savemat
-
-####20240309 
-####发现的问题RGB转HSV HSV再转会RGB 中间会有信息的损失
-#### 直接保存V空间图像计算指标
 
 
 def setup(args):
