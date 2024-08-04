@@ -214,13 +214,13 @@ def register_all_cityscapes(root):
 # ==== Predefined splits for PASCAL VOC ===========
 def register_all_pascal_voc(root):
     SPLITS = [
-        ("voc_2007_trainval", "VOC2007", "trainval"),
-        ("voc_2007_train", "VOC2007", "train"),
-        ("voc_2007_val", "VOC2007", "val"),
-        ("voc_2007_test", "VOC2007", "test"),
-        ("voc_2012_trainval", "VOC2012", "trainval"),
-        ("voc_2012_train", "VOC2012", "train"),
-        ("voc_2012_val", "VOC2012", "val"),
+        ("m3fd_trainval", "M3FD", "trainval"),
+        ("m3fd_2007_train", "M3FD", "train"),
+        ("m3fd_2007_val", "M3FD", "val"),
+        ("m3fd_2007_test", "M3FD", "test"),
+        # ("voc_2012_trainval", "VOC2012", "trainval"),
+        # ("voc_2012_train", "VOC2012", "train"),
+        # ("voc_2012_val", "VOC2012", "val"),
     ]
     for name, dirname, split in SPLITS:
         year = 2007 if "2007" in name else 2012
@@ -252,7 +252,7 @@ if __name__.endswith(".builtin"):
     # Assume pre-defined datasets live in `./datasets`.
     # _root = os.path.expanduser(os.getenv("DETECTRON2_DATASETS", "datasets"))
     ### 在此修改数据集路径
-    _root = "/home/data4/zjq/M3FD/"
+    _root = "/home/data4/zjq/"
     register_all_coco(_root)
     register_all_lvis(_root)
     register_all_cityscapes(_root)

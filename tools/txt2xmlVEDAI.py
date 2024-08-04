@@ -42,7 +42,7 @@ for img in img_names:
     name = img.split('.')[0]
     xml_file = open((src_xml_dir + '/' + name + '.xml'), 'w')
     xml_file.write('<annotation>\n')
-    xml_file.write('    <folder>VOC2007</folder>\n')
+    xml_file.write('    <folder>M3FD</folder>\n')
     xml_file.write('    <filename>' + str(img) + '</filename>\n')
     xml_file.write('    <size>\n')
     xml_file.write('        <width>' + str(Pwidth) + '</width>\n')

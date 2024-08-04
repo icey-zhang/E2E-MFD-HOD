@@ -222,35 +222,12 @@ def read_image(file_name, format=None): #img_transform,toPIL,
             an HWC image in the given format, which is 0-255, uint8 for
             supported image modes in PIL or "BGR"; float (0-1 for Y) for YUV-BT.601.
     """
-    # self.img_transform = transforms.Compose([transforms.ToTensor()])
-    # self.toPIL = transforms.ToPILImage()
-    # irimages = file_name.replace('.jpg', '.png').replace('JPEGImages', 'ir')
-    # visimages = file_name.replace('.jpg', '.png').replace('JPEGImages', 'vi')
-    # irimage = gray_loader(irimages)
-    # visimage_rgb = rgb_loader(visimages)
-    # ir_rgb = rgb_loader(irimages)
-    # visimage_bri, visimage_clr = bri_clr_loader(visimages)
 
-    # visimage_bri = transforms.ToPILImage()(visimage_bri)
-    # visimage_clr = transforms.ToPILImage()(visimage_clr)
-
-    # irimage = transforms.Compose([transforms.ToTensor()])(irimage)
-    # visimage_rgb = transforms.Compose([transforms.ToTensor()])(visimage_rgb)
-    # ir_rgb = transforms.Compose([transforms.ToTensor()])(ir_rgb)
-    # visimage_bri = transforms.Compose([transforms.ToTensor()])(visimage_bri)
-    # visimage_clr = transforms.Compose([transforms.ToTensor()])(visimage_clr)
-
-    # # return irimage, visimage_rgb, visimage_bri, visimage_clr, self.irimages[index]
-    # return irimage, ir_rgb, visimage_rgb, visimage_bri, visimage_clr
-    # 'datasets/VOC2007/JPEGImages/03005.mat'
 
     data = loadmat(file_name.replace('.jpg', '.mat'))
-    # print(data.keys())
     ir = data['ir']
     ir_rgb = data['ir']
     vi = data['vi']
-    # ir = nor(ir)
-    # vi = nor(vi)
     ir = Image.fromarray(ir)
     ir = _apply_exif_orientation(ir)
     ir = convert_PIL_to_numpy(ir, 'L')

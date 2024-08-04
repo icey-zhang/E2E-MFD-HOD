@@ -51,8 +51,8 @@ if __name__ == '__main__':
     model.eval()
     iter_name = '/fi_14999_detection{}/'.format(mode)
     iter_name_V = '/fi_14999_V_detection{}/'.format(mode)
-    path_in = '/home/data4/zjq/M3FD/VOC2007/JPEGImages{}'.format(mode)
-    names = open('/home/data4/zjq/M3FD/VOC2007/ImageSets/Main/fusion{}.txt'.format(mode), 'r').read().splitlines()
+    path_in = '/home/data4/zjq/M3FD/JPEGImages{}'.format(mode)
+    names = open('/home/data4/zjq/M3FD/ImageSets/Main/fusion{}.txt'.format(mode), 'r').read().splitlines()
     path_out = './output0803_grad_enhance_att_loss0305_iter1000/fusion_result/'
     # path_out_V = './output0306_grad/fusion_result/fi_09999_V/'
     # os.makedirs(path_out + '/vi', exist_ok=True)

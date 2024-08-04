@@ -15,7 +15,7 @@ dict = {'0': "People",  # 字典对类型进行转换
 src_img_dir = "/home/zjq/tolinux/compare/TarDAL/data/m3fd/vi"
 # VEDAI 图像的 ground truth 的 txt 文件存放位置
 src_txt_dir = "/home/zjq/tolinux/compare/TarDAL/data/m3fd/labels"
-src_xml_dir = "./datasets/VOC2007/Annotations"
+src_xml_dir = "./datasets/M3FD/Annotations"
 os.makedirs(src_xml_dir, exist_ok=True)
 
 img_names = os.listdir(src_img_dir)
@@ -32,7 +32,7 @@ for img in img_names:
     name = img.split('.')[0]
     xml_file = open((src_xml_dir + '/' + name + '.xml'), 'w')
     xml_file.write('<annotation>\n')
-    xml_file.write('    <folder>VOC2007</folder>\n')
+    xml_file.write('    <folder>M3FD</folder>\n')
     xml_file.write('    <filename>' + str(img) + '</filename>\n')
     xml_file.write('    <size>\n')
     xml_file.write('        <width>' + str(Pwidth) + '</width>\n')
