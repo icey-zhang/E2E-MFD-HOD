@@ -6,8 +6,8 @@ import numpy as np
 from scipy.io import loadmat, savemat
 
 if __name__ == '__main__':
-    path_ir = '/home/zjq/tolinux/compare/TarDAL/data/m3fd/ir'
-    path_vi = '/home/zjq/tolinux/compare/TarDAL/data/m3fd/vi'
+    path_ir = 'to/m3fd/ir'
+    path_vi = 'to/m3fd/vi'
     path_out = './datasets/M3FD/JPEGImages'
     os.makedirs(path_out, exist_ok=True)
     # for f in os.listdir(path_vi):
