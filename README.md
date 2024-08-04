@@ -23,8 +23,8 @@
 To get started, first clone the E2E-MFD repository and navigate to the project directory:
 
 ```bash
-git clone *****
-cd *****
+git clone https://github.com/icey-zhang/E2E-MFD-HOD.git
+cd E2E-MFD-HOD
 ```
 
 **Step 2: Environment Setup:**
