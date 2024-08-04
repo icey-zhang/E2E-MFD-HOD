@@ -1,0 +1,23 @@
+_BASE_: "Base-DiffusionDet.yaml"
+MODEL:
+  WEIGHTS: "./model_data/diffdet_coco_res50_v2.pth"
+  RESNETS:
+    DEPTH: 50
+    STRIDE_IN_1X1: False
+  DiffusionDet:
+    NUM_PROPOSALS: 500
+    NUM_CLASSES: 6
+DATASETS:
+  TRAIN: ("voc_2007_trainval",)
+  TEST:  ("voc_2007_test",)
+SOLVER:
+  # STEPS: (30000, 35000) #(3500, 4200) #(350000, 420000)
+  # MAX_ITER: 40000 #5000 #450000
+  STEPS: (5000, 10000)
+  MAX_ITER: 15000
+  # BASE_LR: 0.0001 #0.000025
+INPUT:
+  CROP:
+    ENABLED: False
+  FORMAT: "RGB"
+OUTPUT_DIR: "./output0803_grad_enhance_att_loss0305_iter1000" #_diffusion
