@@ -12,9 +12,9 @@ dict = {'0': "People",  # 字典对类型进行转换
         }
 # classes = ['People', 'Car', 'Bus', 'Lamp', 'Motorcycle', 'Truck']
 # VEDAI 图像存储位置
-src_img_dir = "/home/zjq/tolinux/compare/TarDAL/data/m3fd/vi"
+src_img_dir = "to/m3fd/vi"
 # VEDAI 图像的 ground truth 的 txt 文件存放位置
-src_txt_dir = "/home/zjq/tolinux/compare/TarDAL/data/m3fd/labels"
+src_txt_dir = "to/m3fd/labels"
 src_xml_dir = "./datasets/M3FD/Annotations"
 os.makedirs(src_xml_dir, exist_ok=True)
 
