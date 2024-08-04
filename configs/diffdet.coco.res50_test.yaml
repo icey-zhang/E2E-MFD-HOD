@@ -8,11 +8,9 @@ MODEL:
     NUM_PROPOSALS: 500
     NUM_CLASSES: 6
 DATASETS:
-  TRAIN: ("voc_2007_trainval",)
-  TEST:  ("voc_2007_test",)
+  TRAIN: ("m3fd_trainval",)
+  TEST:  ("m3fd_test",)
 SOLVER:
-  # STEPS: (30000, 35000) #(3500, 4200) #(350000, 420000)
-  # MAX_ITER: 40000 #5000 #450000
   STEPS: (350000, 420000)
   MAX_ITER: 450000
 INPUT:
