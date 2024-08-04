@@ -10,7 +10,7 @@
 ## **Overview**
 
 <p align="center">
-  <img src="https://github.com/icey-zhang/E2E-MFD/tree/main/assets/frame.png" alt="overview" width="90%">
+  <img src="./assets/frame.png" alt="overview" width="90%">
 </p>
 
 ## **Getting Started**
