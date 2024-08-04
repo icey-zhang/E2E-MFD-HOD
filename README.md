@@ -71,14 +71,14 @@ EfficientMFD
 Use the config file with [this](./configs/diffdet.coco.res50.yaml).
 
 ```python
-python ./train_net.py
-python ./test.py
+python train_net.py
+python test.py
 ```
 
 ### Generate fusion images
 
 ```python
-python ./save_test_fusion_V.py
+python save_test_fusion_V.py
 ```
 
 ## **Result**
