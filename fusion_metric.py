@@ -34,8 +34,8 @@ def image_read_cv2(path, mode='RGB'):
     return img#.astype(np.uint8)
 
 if __name__ == '__main__':
-    path_in = '/home/data4/zjq/M3FD/M3FD_Fusion'
-    result_txt_name = '/home/zjq/EfficientMFD/M3FD/results.txt'
+    path_in = to/M3FD/M3FD_Fusion'
+    result_txt_name = 'results.txt'
     path_in_fi = './output0803_grad_enhance_att_loss0305_iter1000/fusion_result/fi_14999_V_detection/'
     names = os.listdir(path_in + '/Vis')
     table = PrettyTable(['name', 'EN', 'SD', 'SF', 'MI', 'SCD', 'VIF', 'Qabf', 'SSIM'])
