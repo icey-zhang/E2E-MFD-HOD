@@ -40,7 +40,7 @@ conda activate E2E-MFD
 
 ### Prepare the dataset M3FD
 
-you can download the dataset and then run 
+you can download the [dataset](https://pan.baidu.com/share/init?surl=GoJrrl_mn2HNQVDSUdPCrw&pwd=M3FD) and then run 
 ```bash
 python tools/get_data.py
 python txt2xml.py
