@@ -6,7 +6,7 @@
 </div>
 
 
-# <center> This code is for horizontal OD based on **[Detectron2]([https://github.com/open-mmlab/mmdetection](https://github.com/facebookresearch/detectron2))**. The oriented OD code is released at [E2E-MFD](https://github.com/icey-zhang/E2E-MFD).</h4>
+- This code is for horizontal OD based on **[Detectron2]([https://github.com/open-mmlab/mmdetection](https://github.com/facebookresearch/detectron2))**. The oriented OD code is released at [E2E-MFD](https://github.com/icey-zhang/E2E-MFD).</h4>
 
 
 
