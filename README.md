@@ -1,11 +1,11 @@
 <div align="center">
 <h1> E2E-MFD </h1>
 <h3> E2E-MFD: Towards End-to-End Synchronous Multimodal Fusion Detection</h3>
-<h4> This code is for horizontal OD. The oriented OD code is released at https://github.com/icey-zhang/E2E-MFD.</h4>
+
 
 </div>
 
-The code is based on **[Detectron2]([https://github.com/open-mmlab/mmdetection](https://github.com/facebookresearch/detectron2))**
+This code is for horizontal OD based on **[Detectron2]([https://github.com/open-mmlab/mmdetection](https://github.com/facebookresearch/detectron2))**. The oriented OD code is released at https://github.com/icey-zhang/E2E-MFD.</h4>
 
 
 
