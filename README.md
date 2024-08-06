@@ -65,6 +65,13 @@ EfficientMFD
 │   │   │   ├── 00000.mat
 │   │   │   ├── 00001.mat
 │   │   │   ├── ......
+│   │   ├── M3FD_Fusion
+│   │   │   ├── ir
+│   │   │   ├── vi
+│   │   ├── M3FD_Detection
+│   │   │   ├── ir
+│   │   │   ├── vi
+
 ```
 
 
