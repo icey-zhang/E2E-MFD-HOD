@@ -115,14 +115,14 @@ if __name__ == '__main__':
     path_in = '/home/data4/zjq/M3FD/M3FD_Fusion'
     result_txt_name = '/home/zjq/EfficientMFD/M3FD/results_difVIF_difMI.txt'
     path_in_fi = './output0803_grad_enhance_att_loss0305_iter1000/fusion_result/fi_14999_V_detection/'
-    names = os.listdir(path_in + '/Vis')
+    names = os.listdir(path_in + '/vi')
     table = PrettyTable(['name', 'EN', 'SD', 'SF', 'MI', 'SCD', 'VIF', 'Qabf', 'SSIM'])
     MIs, ENs, VIFs, SDs, SCDs, Qabfs, SSIMs, SFs = [], [], [], [], [], [], [], []
     # result_path = path_in + '/result.txt'
     for name in tqdm.tqdm(names):
         result_txt = open(result_txt_name, 'w')
-        ir_file = path_in + '/Ir/' + name
-        vi_file = path_in + '/Vis/' + name
+        ir_file = path_in + '/ir/' + name
+        vi_file = path_in + '/vi/' + name
         fi_file = path_in_fi + name
         ir = image_read_cv2(ir_file, 'V')
         vi = image_read_cv2(vi_file, 'V')
