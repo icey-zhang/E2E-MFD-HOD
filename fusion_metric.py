@@ -1,4 +1,3 @@
-Version:0.9 StartHTML:0000000105 EndHTML:0000034706 StartFragment:0000000141 EndFragment:0000034670
 import os
 
 import cv2
@@ -134,10 +133,9 @@ if __name__ == '__main__':
         EN = Evaluator.EN(fi)
         SD = Evaluator.SD(fi)
         SF = Evaluator.SF(fi)
-        # MI = Evaluator.MI(fi, ir, vi)
+        
         MI = ComEntropy(ir, fi) + ComEntropy(vi, fi)
         SCD = Evaluator.SCD(fi, ir, vi)
-        # VIF = Evaluator.VIFF(fi, ir, vi)
         VIF = compare_vifp(ir, fi) + compare_vifp(vi, fi)
         Qabf = Evaluator.Qabf(fi, ir, vi)
         SSIM = Evaluator.SSIM(fi, ir, vi)
